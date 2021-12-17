@@ -1,0 +1,172 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bg-RosaVermelho{
+    background-color: #D98859;
+}
+
+.bg-RosaVermelhoTransaparente{
+    background-color: #d98859cf;
+}
+
+.bg-AzulRoxo{
+    background-color: #363159;
+}
+
+.bg-branco{
+    background-color: #F2F2F2;
+}
+
+.bg-Laranja{
+    background-color: #F2762E;
+}
+
+.bg-Laranja:hover{
+    background-color: #F2762Ecc;
+}
+
+.bg-laranja{
+    background-color: #F2762E;
+}
+
+.bg-pretoTransparente{
+    background-color: #3333338c;
+}
+
+.letrasFinas{
+    font-weight: 100;
+}
+
+.linkSaibaMais{
+    color: white;
+}
+
+.linkSaibaMais:hover{
+    color: #e5e5e5;
+}
+
+.bgPergunta{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.semSublinhado{
+    text-decoration: none;
+}
+
+.imgBanner{
+    background-image: url(../img/foto-criancas-brincando-capa.jpg);
+    background-position: center;
+    height: 90vh;
+    display: flex;
+}
+
+.textBanner{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.noticias .card{
+    border: none !important;
+}
+
+.card-header{
+    background-color: white !important;
+}
+
+.card-footer{
+    background-color: white !important;
+}
+
+.imgSobre{
+  /* The image used */
+  background-image: url("../img/foto-criancas-brincando-capa.jpg");
+
+  /* Set a specific height */
+  min-height: 60vh;
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.textoPergunta{
+    display: flex;
+    align-items: center;
+}
+
+.listNoticias .card{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: black;
+}
+
+.listNoticias a{
+    text-decoration: none;
+}
+
+.page-link{
+    color: black;
+}
+
+a.page-link.active{
+    background-color: #363159;
+    color: white;
+}
+
+.page-link:hover{
+    background-color: #36315945;
+    color: black;
+}
+
+h4{
+    font-weight: normal;
+    font-size: large;
+}
+
+.corpoNoticia{
+    text-align: justify;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: small;
+}
+
+.doacao ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.doacao ul img{
+    margin-left: 10px;
+}
+
+.doacao .form-control{
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.doacao .form-control:focus{
+    border: 0px 0px 1px 0px #ced4da;
+    box-shadow: none;
+}
+
+.text-justify{
+    text-align: justify;
+}
