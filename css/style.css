@@ -14,6 +14,19 @@
     background-color: #363159;
 }
 
+.bg-laranjaClaro{
+    background-color: #ffe6d7;
+}
+
+.bg-AzulRoxoHover{
+    background-color: #363159;
+}
+
+.bg-AzulRoxoHover:hover{
+    background-color: #372c85;
+
+}
+
 .bg-branco{
     background-color: #F2F2F2;
 }
@@ -32,6 +45,7 @@
 
 .bg-pretoTransparente{
     background-color: #3333338c;
+    width: 100%;
 }
 
 .letrasFinas{
@@ -47,9 +61,8 @@
 }
 
 .bgPergunta{
-    background-color: white;
-    border-radius: 5px;
     padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 .semSublinhado{
@@ -64,24 +77,26 @@
 }
 
 .textBanner{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: end;
-    margin-bottom: 0px;
-    width: 100%;
+    bottom: 20px;
+    position: absolute;
+    right: 10vh;
+    left: 10vh
 }
 
-.noticias .card{
-    border: none !important;
+.noticias .card:hover{
+    transform: scale(1, 1);
+    /* background:white; */
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5);
 }
 
 .card-header{
-    background-color: white !important;
+    background-color: #F2F2F2 !important;
+    border-bottom: none;
 }
 
 .card-footer{
-    background-color: white !important;
+    background-color: #F2F2F2 !important;
+    border-top: none;
 }
 
 .imgSobre{
@@ -170,3 +185,4 @@ figcaption{
 .text-justify{
     text-align: justify;
 }
+
