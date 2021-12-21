@@ -105,17 +105,34 @@
         <div class="parteSuperior bg-branco p-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4">
-                        <img src="img/logo.png" class="img-fluid justify-content-end d-flex" width="100px" alt="">
-                        <p class="mt-4">R. Voluntário João Batista de Arruda, 657 - Junqueira, Lins - SP, 16403-140 <br>(14) 99713-0291</p>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center text-justify">
+                        <img src="img/logo.png" class="img-fluid text-center mb-2" width="150px" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iusto similique non. Aliquid libero recusandae cumque! Recusandae rerum cupiditate incidunt autem dolor quaerat ducimus at voluptates, alias aut, quod nobis.
+                        </p>
+                        <p class="mt-2">R. Voluntário João Batista de Arruda, 657 - Junqueira, Lins - SP, 16403-140 <br>(14) 99713-0291</p>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h4>A ONG</h4>
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odit dicta quos praesentium perferendis error. Blanditiis distinctio, sit tempora corporis officiis saepe illo voluptates, sequi rerum quod, id fugiat obcaecati.</p>
+                        <h4 class="bold text-center">Redes Sociais</h4>
+                        <a href="#" class="text-black"><span class="mdi mdi-facebook mdi-36px text-primary"></span></a>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h4>Redes Sociais</h4>
-                        <a href="#" class="text-black"><span class="mdi mdi-facebook mdi-36px"></span></a>
+                        <h4 class="bold text-center">Contato</h4>
+                        <form action="">
+                            <div>
+                                <label for="nomeContato" class="form-label">Nome*</label>
+                                <input type="text" name="nomeContato" id="nomeContato" placeholder="Digite seu nome" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="emailContato" class="form-label">E-mail*</label>
+                                <input type="email" name="emailContato" id="emailContato" class="form-control" placeholder="email@exemplo.com" required>
+                            </div>
+                            <div>
+                                <label for="mensagemConatato" class="form-label">Mensagem*</label>
+                                <textarea name="mensagemConatato" id="mensagemConatato" cols="20" rows="4" required class="form-control"></textarea>
+                            </div>
+                            <button class="btn bg-AzulRoxoHover mt-2 text-white">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
