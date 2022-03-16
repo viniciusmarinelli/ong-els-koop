@@ -189,3 +189,7 @@ figcaption{
 .bold{
     font-weight: bold;
 }
+
+.mdi-facebook:hover{
+    color:#372c85;
+}
