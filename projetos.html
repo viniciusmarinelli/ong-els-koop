@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="MaterialDesign/css/materialdesignicons.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-RosaVermelho">
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light bg-RosaVermelho animate__animated animate__fadeInTopLeft" role="navigation">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="70" height="73" class="d-inline-block align-text-top"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="70" height="73" class="d-inline-block align-text-top" alt="Logo da ONG Els Koop"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +32,7 @@
                             <a class="nav-link" href="noticias.html">Notícias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="projetos.html" aria-current="page">Projetos</a>
+                            <a class="nav-link active" aria-current="page" href="projetos.html">Projetos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="doacao.html">Doar</a>
@@ -40,155 +42,170 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
-        <section class="projetos">
+        <section role="section" class="projetos">
 
             <div class="p-4">
                 <div class="container">
-                <div class="row">
-                    <div class="col-12"><h2>Projetos</h2></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="card mb-3">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body ">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Ver mais
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Projetos</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="Crianças brincando em euma atividade desenvolvida pela ONG">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body ">
+                                            <h3 class="card-title">Projeto 01</h3>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#projeto01">
+                                        Ver mais do Projeto 01
                                         </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="projeto01" tabindex="-1" aria-labelledby="projeto01Label" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title" id="projeto01Label">Projeto 01</h3>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor
+                                                            sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque
+                                                            perferendis molestiae nulla repudiandae. </br>
+                                                            <a href="#" data-bs-dismiss="modal">Chegou ao fim do conteúdo do Projeto 01</a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque perferendis molestiae nulla repudiandae.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card mb-3 ">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body ">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Ver mais
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="Crianças brincando em euma atividade desenvolvida pela ONG">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body ">
+                                            <h3 class="card-title">Projeto 02</h3>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#projeto02">
+                                        Ver mais do Projeto 02
                                         </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="projeto02" tabindex="-1" aria-labelledby="projeto02Label" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title" id="projeto02Label">Projeto 02</h3>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor
+                                                            sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque
+                                                            perferendis molestiae nulla repudiandae. </br>
+                                                            <a href="#" data-bs-dismiss="modal">Chegou ao fim do conteúdo do Projeto 02</a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque perferendis molestiae nulla repudiandae.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card mb-3 ">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body ">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Ver mais
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="Crianças brincando em euma atividade desenvolvida pela ONG">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body ">
+                                            <h3 class="card-title">Projeto 03</h3>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#projeto03">
+                                        Ver mais do Projeto 03
                                         </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="projeto03" tabindex="-1" aria-labelledby="projeto03Label" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title" id="projeto03Label">Projeto 03</h3>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor
+                                                            sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque
+                                                            perferendis molestiae nulla repudiandae. </br>
+                                                            <a href="#" data-bs-dismiss="modal">Chegou ao fim do conteúdo do Projeto 03</a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque perferendis molestiae nulla repudiandae.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="card mb-3 ">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="">
-                                    
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body ">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Ver mais
+                        <div class="col-12 col-md-6">
+                            <div class="card mb-3 ">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/foto-criancas-brincando-capa.jpg" class="img-fluid rounded-start" alt="Crianças brincando em euma atividade desenvolvida pela ONG">
+
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body ">
+                                            <h3 class="card-title">Projeto 04</h3>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <button type="button" class="btn bg-AzulRoxo text-white" data-bs-toggle="modal" data-bs-target="#projeto04">
+                                        Ver mais do Projeto 04
                                         </button>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="projeto04" tabindex="-1" aria-labelledby="projeto04lLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title" id="projeto04lLabel">Projeto 04</h3>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor
+                                                            sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque
+                                                            perferendis molestiae nulla repudiandae. </br>
+                                                            <a href="#" data-bs-dismiss="modal">Chegou ao fim do conteúdo do Projeto 04</a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="modal-body">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus voluptatem asperiores sequi libero aspernatur, sit provident repellendus cumque, omnis quasi veritatis, nemo molestiae placeat eligendi eum cum quod atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, dolorum perferendis officia saepe dolorem aliquid mollitia maiores similique recusandae asperiores maxime, nemo molestias facilis eveniet! Atque perferendis molestiae nulla repudiandae.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                                            </div>
-                                            </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -197,19 +214,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-        <section class="doacao p-4 bg-laranja">
+        <section role="section" class="doacao p-4 bg-laranja">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 col-12 text-white">
+                    <div class="col-md-6 col-12 text-dark">
                         <h2>Qualquer doação é bem-vinda</h2>
                     </div>
                     <div class="col-md-6 col-12 text-center">
-                            <a href="doacao.html" class="btn btn-lg bg-AzulRoxo text-white fw-bold p-3 m-3" style="width: 100%;">DOAR</a>
+                        <a href="doacao.html" class="btn btn-lg bg-AzulRoxoHover text-white fw-bold p-3 m-3" style="width: 100%;">DOAR</a>
                     </div>
-                    <div class="col-12 text-white">
+                    <div class="col-12 text-dark">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nam rerum itaque, nesciunt sint perspiciatis numquam molestiae provident harum quaerat suscipit inventore molestias vitae modi. Distinctio natus nam nesciunt labore.</p>
                     </div>
                 </div>
@@ -217,24 +233,24 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="parteSuperior bg-branco p-4">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 d-flex flex-column align-items-center text-justify">
-                        <img src="img/logo.png" class="img-fluid text-center mb-2" width="150px" alt="">
+                        <img src="img/logo.png" class="img-fluid text-center mb-2" width="150px" alt="Logo da ONG Els Koop">
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam iusto similique non. Aliquid libero recusandae cumque! Recusandae rerum cupiditate incidunt autem dolor quaerat ducimus at voluptates, alias aut, quod nobis.
                         </p>
                         <p class="mt-2">R. Voluntário João Batista de Arruda, 657 - Junqueira, Lins - SP, 16403-140 <br>(14) 99713-0291</p>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h4 class="bold text-center">Redes Sociais</h4>
+                        <h2 class="bold text-center">Redes Sociais</h2>
                         <a href="#" class="text-black"><span class="mdi mdi-facebook mdi-36px text-primary"></span></a>
                     </div>
                     <div class="col-12 col-md-4">
-                        <h4 class="bold text-center">Contato</h4>
-                        <form action="">
+                        <h2 class="bold text-center">Contato</h2>
+                        <form id="contato">
                             <div>
                                 <label for="nomeContato" class="form-label">Nome*</label>
                                 <input type="text" name="nomeContato" id="nomeContato" placeholder="Digite seu nome" class="form-control" required>
@@ -245,9 +261,17 @@
                             </div>
                             <div>
                                 <label for="mensagemConatato" class="form-label">Mensagem*</label>
-                                <textarea name="mensagemConatato" id="mensagemConatato" cols="20" rows="4" required class="form-control"></textarea>
+                                <textarea name="mensagemConatato" id="mensagemConatato" cols="20" rows="4" required class="form-control" placeholder="Escreva sua mensagem aqui"></textarea>
                             </div>
-                            <button class="btn bg-AzulRoxoHover mt-2 text-white">Enviar</button>
+                            <div>
+                                <label for="captcha" class="form-label" id="captchaLabel">Quanto é 2+8*</label>
+                                <input type="text" name="captcha" id="captcha" placeholder="Digite a resposta" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <small>* Campos obrigatórios</small>
+                            </div>
+                            <button class="btn bg-AzulRoxoHover mt-2 text-white" onclick="clickBtn(); return false">Enviar mensagem</button>
+
                         </form>
                     </div>
                 </div>
@@ -257,7 +281,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p>&copy; Todos os direitos reservados - 2021 <br>Desenvolvido por <a target="_blank" href="https://www.behance.net/vsouzadesigner"class="text-dark">Vinícius Souza</a></p>
+                        <p>&copy; Todos os direitos reservados - 2021 <br>Desenvolvido por <a target="_blank" href="https://www.behance.net/vsouzadesigner" class="text-dark">Vinícius Souza (este link abrirá uma nova página)</a></p>
                     </div>
                 </div>
             </div>
@@ -265,5 +289,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <noscript>Seu navegador não tem suporte ou está desabilitado o JavaScript.</noscript>
 </body>
+
 </html>
